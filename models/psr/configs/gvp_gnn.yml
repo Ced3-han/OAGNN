@@ -1,0 +1,31 @@
+model:
+  perceptron_mode: gvp
+  num_layers: 3
+  drop_rate: 0.1
+  node_hid_dims: 
+    - 128
+    - 32
+  edge_hid_dims:
+    - 64
+    - 16
+
+train:
+  seed: 2021
+  max_epochs: 100
+  val_freq: 1
+  max_grad_norm: +.inf
+  optimizer:
+    type: adam
+    lr: 1.e-4
+    weight_decay: 0.0
+    beta1: 0.9
+    beta2: 0.999
+  scheduler: 
+    type: exp
+    gamma: 0.99
+
+
+data:
+  root: /home/luost/data/datasets/PSR/split-by-year/data
+  train_batch_size: 8
+  val_batch_size: 8
