@@ -1,5 +1,7 @@
 # directed-weight
 
+Official Implementation of Orientation-Aware Graph Neural Networks for Protein Structure Representation Learning in RECOMB 2025 (https://arxiv.org/abs/2201.13299).
+
 ## Environment
 
 ```bash
